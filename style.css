@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.container {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 650px;
+  top: 5px;
+  left: 90px;
+  background-size: cover;
+  width: 35rem;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgb(255, 3, 3), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneaker img {
+  position: relative;
+  top: -10px;
+  width: 150px;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.info h1 {
+  position: relative;
+  top: -25px;
+  left: 40px;
+  font-size: 3rem;
+  font-family: cursive;
+  transition: all 0.75s ease-out;
+}
+.info h3 {
+  position: relative;
+  top: -35px;
+  left: 50px;
+  font-family: cursive;
+  font-size: 1.5rem;
+  padding: 2rem 0rem;
+  color: #210f49;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+button.active {
+  background: #585858;
+  color: white;
+}
+.purchase {
+  position: relative;
+  top: 280px;
+  left: -250px;
+  transition: all 0.75s ease-out;
+}
+.purchase button {
+  width: 100%;
+  padding: 12px 40px;
+  background: #0099ff;
+  border: none;
+  font-family: cursive;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+
+.purchase button:hover{
+  color: rgb(15, 245, 253);
+  background: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
